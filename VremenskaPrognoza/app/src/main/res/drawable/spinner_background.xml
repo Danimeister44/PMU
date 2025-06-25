@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Kada je kliknut -->
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <solid android:color="#A5D6A7" /> <!-- nežna zelena -->
+            <corners android:radius="8dp" />
+        </shape>
+    </item>
+
+    <!-- Zadano stanje -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#F2F2F2" /> <!-- svetlosiva pozadina -->
+            <corners android:radius="8dp" />
+        </shape>
+    </item>
+</selector>

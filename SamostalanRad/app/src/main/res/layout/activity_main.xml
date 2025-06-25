@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        tools:context=".MainActivity">
+
+
+
+        <EditText
+            android:id="@+id/index_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Unesite ime"
+            android:inputType="text" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Datum putovanja:" />
+
+        <EditText
+            android:id="@+id/index_edit_text2"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Unesite datum putovanja"
+            android:inputType="date" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Izaberite grad u koji hoćete ići:" />
+
+        <RadioGroup
+            android:id="@+id/attend_radio_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/radio_b"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Minhen" />
+
+            <RadioButton
+                android:id="@+id/radio_lb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lisabon" />
+
+            <RadioButton
+                android:id="@+id/radio_vn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Venecija" />
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="VIP?" />
+
+        <Switch
+            android:layout_width="48dp"
+            android:layout_height="48dp">
+
+        </Switch>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Da li želite osiguranje?" />
+
+        <RadioGroup
+            android:id="@+id/osiguranje"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/radio_da"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Da" />
+
+            <RadioButton
+                android:id="@+id/radio_ne"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="Ne" />
+
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/submit_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

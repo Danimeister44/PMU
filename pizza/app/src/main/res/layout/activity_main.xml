@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="#CBF09F"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="189dp"
+        android:orientation="horizontal">
+
+        <RadioGroup
+            android:id="@+id/rg_pizza_size"
+            android:layout_width="214dp"
+            android:layout_height="189dp"
+            android:foregroundTint="#03C30A0A">
+
+            <RadioButton
+                android:id="@+id/rb_small"
+                style="@style/Widget.AppCompat.CompoundButton.RadioButton"
+                android:layout_width="match_parent"
+                android:layout_height="61dp"
+                android:checked="true"
+                android:text="Small ($10)"
+                android:textSize="10pt" />
+
+            <RadioButton
+                android:id="@+id/rb_medium"
+                android:layout_width="match_parent"
+                android:layout_height="61dp"
+                android:text="Medium ($11)"
+                android:textSize="10pt" />
+
+            <RadioButton
+                android:id="@+id/rb_large"
+                android:layout_width="match_parent"
+                android:layout_height="66dp"
+                android:text="Large ($12)"
+                android:textSize="10pt" />
+
+
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="197dp"
+            android:layout_height="190dp"
+            android:orientation="vertical"
+            android:textSize="10pt">
+
+            <CheckBox
+                android:id="@+id/cb_pepperoni"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Pepperoni ($2)"
+                android:textSize="10pt" />
+
+            <CheckBox
+                android:id="@+id/cb_veggies"
+                android:layout_width="match_parent"
+                android:layout_height="62dp"
+                android:text="Veggies ($2)"
+                android:textSize="10pt" />
+
+            <CheckBox
+                android:id="@+id/cb_olives"
+                android:layout_width="match_parent"
+                android:layout_height="67dp"
+                android:text="Olives ($2)"
+                android:textSize="10pt" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <Switch
+        android:id="@+id/sw_delivery"
+        android:layout_width="385dp"
+        android:layout_height="58dp"
+        android:gravity="center"
+        android:text="Delivery (5$)"
+        android:textColor="#C70000"
+        android:textSize="10pt" />
+
+    <Button
+        android:id="@+id/btn_order"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:backgroundTint="#1F1FDE"
+        android:onClick="orderPizza"
+        android:text="Place Order"
+        android:textSize="10pt" />
+
+    <TextView
+        android:id="@+id/tv_order_summary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Order Summary"
+        android:textSize="10pt" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/pizzatime"
+        android:visibility="invisible"
+        />
+
+</LinearLayout>

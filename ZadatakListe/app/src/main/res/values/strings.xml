@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">ZadatakListe</string>
+    <string name="imeDrzave">text</string>
+    <string name="opisDrzave">TextView</string>
+
+
+
+    <string name="country_serbia">Srbija</string>
+    <string name="country_hungary">Mađarska</string>
+    <string name="country_germany">Nemačka</string>
+    <string name="country_spain">Španija</string>
+    <string name="country_italy">Italija</string>
+    <string name="country_australia">Australija</string>
+
+    <string name="description_serbia">Srbija, zvanično Republika Srbija, država je na raskrsnici puteva srednje i jugoistočne Evrope u južnom delu Panonske nizije i središtu Balkanskog poluostrva. Većim delom zahvata Balkansko poluostrvo, a manjim Panonsku niziju. Srbija se na severu graniči sa Mađarskom, na severoistoku sa Rumunijom, na istoku sa Bugarskom, na jugu sa Severnom Makedonijom, na jugozapadu sa Albanijom i Crnom Gorom, a na zapadu sa Bosnom i Hercegovinom (Republikom Srpskom) i Hrvatskom. Glavni grad je Beograd.</string>
+    <string name="description_hungary">Mađarska (mađarski: Magyarország IPA: [ˈmɒɟɒrorsaːɡ] ( poslušajte)) je država u srednjoj Evropi. Ona je jednostavna demokratska parlamentarna republika od 1989. Član je Severnoatlantskog saveza od 1999., Evropske Unije od 2004. i deo Šengenske zone od 2007. Država broji 9,68 miliona stanovnika i zvanični jezik je mađarski. Glavni grad je Budimpešta.</string>
+    <string name="description_germany">Nemačka (nem. Deutschlandⓘ), zvanično Savezna Republika Nemačka (nem. Bundesrepublik Deutschlandⓘ), je savezna parlamentarna republika u centralnoj i zapadnoj Evropi. Sastoji se od 16 konstitutivnih država, zauzima površinu od 356.051 km² i ima uglavnom umerenu sezonsku klimu.</string>
+    <string name="description_spain">Španija (šp. Espana), zvanično Kraljevina Španija (šp. Reino de Espana), je južnoevropska država, koja se nalazi na jugozapadu kontinenta na Iberijskom poluostrvu i nekoliko susednih arhipelaga i enklava. Graniči se sa Portugalom na zapadu i Francuskom i Andorom na severoistoku. Otvara se na Sredozemno more na jugu i istoku i Atlantski okean na severu i severozapadu, evropski deo Gibraltara graniči sa Španijom. Glavni grad je Madrid.</string>
+    <string name="description_italy">Italija (ital. Italia [iˈtaːlja]; zvanično Italijanska ili Italijanska Republika, ital. Repubblica Italiana), država u južnoj Evropi. Italija obuhvata Apeninsko poluostrvo i tri velika ostrva u Sredozemnom moru: Siciliju, Sardiniju i Elbu. Njegova jedina kopnena granica je na severu, u Alpima, gde se graniči sa Francuskom, Švajcarskom, Austrijom i Slovenijom. Nezavisne države San Marino i Vatikan nalaze se na teritoriji Italije.</string>
+    <string name="description_australia">Australija (engleski: Australia), zvanično Komonvelt Australije (engleski: Commonvealth of Australia), je država na južnoj hemisferi koja obuhvata kopno istoimenog najmanjeg kontinenta na svetu, ostrvo Tasmaniju, kao i brojna druga ostrva u Južnom, Indijskom i Tihom okeanu. Površina Australije je 7.741.220 km² i šesta je po veličini država na svetu. Okružen je Indonezijom, Istočnim Timorom i Papuom Novom Gvinejom na severu, Solomonskim Ostrvima, Vanuatuom i francuskim prekomorskim posedom Nove Kaledonije na severoistoku i Novim Zelandom na jugoistoku.</string>
+
+</resources>

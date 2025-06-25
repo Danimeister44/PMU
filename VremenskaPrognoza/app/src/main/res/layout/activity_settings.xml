@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- GRAD -->
+        <TextView
+            android:text="Choose City:"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#444444"
+            android:layout_marginTop="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Spinner
+            android:id="@+id/spinnerCity"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:spinnerMode="dropdown"
+
+            android:popupBackground="@color/green_popup"/>
+
+        <!-- separator -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="12dp"
+            android:background="#0F9D58" />
+
+        <!-- BROJ DANA -->
+        <TextView
+            android:text="Forecast Duration:"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#444444"
+            android:layout_marginTop="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupDays"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton android:id="@+id/radio3days"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3 days" />
+            <RadioButton android:id="@+id/radio5days"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5 days" />
+            <RadioButton android:id="@+id/radio7days"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="7 days" />
+        </RadioGroup>
+
+        <!-- separator -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="12dp"
+            android:background="#0F9D58" />
+
+        <!-- JEDINICE -->
+        <TextView
+            android:text="Units:"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#444444"
+            android:layout_marginTop="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupUnits"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton android:id="@+id/radioMetric"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Metric (°C)" />
+            <RadioButton android:id="@+id/radioImperial"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Imperial (°F)" />
+        </RadioGroup>
+
+        <!-- separator -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="12dp"
+            android:background="#0F9D58" />
+
+        <!-- ZAPAMTI ME -->
+        <CheckBox
+            android:id="@+id/checkBoxRemember"
+            android:text="Remember my settings"
+            android:layout_marginTop="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- DUGME -->
+        <Button
+            android:id="@+id/buttonSave"
+            android:text="Save and Return"
+            android:textColor="@android:color/white"
+            android:backgroundTint="#0F9D58"
+            android:layout_marginTop="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxWidth="320dp"/>
+    </LinearLayout>
+</ScrollView>

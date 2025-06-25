@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">IBMapp</string>
+    <string name="ime">Ime:</string>
+    <string name="izra_unaj_bmi">Izračunaj BMI</string>
+</resources>

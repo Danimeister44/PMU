@@ -1,0 +1,159 @@
+{
+  "cod": "200",
+  "message": 0,
+  "cnt": 8,
+  "list": [
+    {
+      "dt": 1718325600,
+      "main": {
+        "temp": 298.15,
+        "pressure": 1013,
+        "humidity": 65
+      },
+      "weather": [
+        {
+          "description": "clear sky",
+          "icon": "01d"
+        }
+      ],
+      "wind": {
+        "speed": 1.5,
+        "deg": 90
+      },
+      "dt_txt": "2025-06-14 00:00:00"
+    },
+    {
+      "dt": 1718336400,
+      "main": {
+        "temp": 297.10,
+        "pressure": 1012,
+        "humidity": 68
+      },
+      "weather": [
+        {
+          "description": "few clouds",
+          "icon": "02n"
+        }
+      ],
+      "wind": {
+        "speed": 1.8,
+        "deg": 100
+      },
+      "dt_txt": "2025-06-14 03:00:00"
+    },
+    {
+      "dt": 1718347200,
+      "main": {
+        "temp": 296.00,
+        "pressure": 1011,
+        "humidity": 70
+      },
+      "weather": [
+        {
+          "description": "scattered clouds",
+          "icon": "03n"
+        }
+      ],
+      "wind": {
+        "speed": 2.0,
+        "deg": 110
+      },
+      "dt_txt": "2025-06-14 06:00:00"
+    },
+    {
+      "dt": 1718358000,
+      "main": {
+        "temp": 299.50,
+        "pressure": 1012,
+        "humidity": 60
+      },
+      "weather": [
+        {
+          "description": "broken clouds",
+          "icon": "04d"
+        }
+      ],
+      "wind": {
+        "speed": 2.5,
+        "deg": 120
+      },
+      "dt_txt": "2025-06-14 09:00:00"
+    },
+    {
+      "dt": 1718368800,
+      "main": {
+        "temp": 302.20,
+        "pressure": 1013,
+        "humidity": 50
+      },
+      "weather": [
+        {
+          "description": "light rain",
+          "icon": "10d"
+        }
+      ],
+      "wind": {
+        "speed": 2.8,
+        "deg": 135
+      },
+      "dt_txt": "2025-06-14 12:00:00"
+    },
+    {
+      "dt": 1718379600,
+      "main": {
+        "temp": 303.10,
+        "pressure": 1012,
+        "humidity": 48
+      },
+      "weather": [
+        {
+          "description": "light rain",
+          "icon": "10d"
+        }
+      ],
+      "wind": {
+        "speed": 3.0,
+        "deg": 150
+      },
+      "dt_txt": "2025-06-14 15:00:00"
+    },
+    {
+      "dt": 1718390400,
+      "main": {
+        "temp": 300.00,
+        "pressure": 1011,
+        "humidity": 55
+      },
+      "weather": [
+        {
+          "description": "few clouds",
+          "icon": "02d"
+        }
+      ],
+      "wind": {
+        "speed": 2.2,
+        "deg": 160
+      },
+      "dt_txt": "2025-06-14 18:00:00"
+    },
+    {
+      "dt": 1718401200,
+      "main": {
+        "temp": 298.50,
+        "pressure": 1010,
+        "humidity": 60
+      },
+      "weather": [
+        {
+          "description": "clear sky",
+          "icon": "01n"
+        }
+      ],
+      "wind": {
+        "speed": 1.7,
+        "deg": 180
+      },
+      "dt_txt": "2025-06-14 21:00:00"
+    }
+  ]
+}

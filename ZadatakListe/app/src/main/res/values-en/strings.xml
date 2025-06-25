@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ZadatakListe</string>
+    <string name="imeDrzave">text</string>
+    <string name="opisDrzave">TextView</string>
+
+    <string name="country_serbia">Serbia</string>
+    <string name="country_hungary">Hungary</string>
+    <string name="country_germany">Germany</string>
+    <string name="country_spain">Spain</string>
+    <string name="country_italy">Italy</string>
+    <string name="country_australia">Australia</string>
+
+
+    <string name="description_serbia">Serbia, officially the Republic of Serbia, is a country at the crossroads of Central and Southeastern Europe in the southern part of the Pannonian Plain and the center of the Balkan Peninsula. The greater part covers the Balkan Peninsula, and the smaller part the Pannonian Plain. Serbia borders Hungary to the north, Romania to the northeast, Bulgaria to the east, North Macedonia to the south, Albania and Montenegro to the southwest, and Bosnia and Herzegovina (Republic of Srpska) and Croatia to the west. \nThe capital is Belgrade.</string>
+    <string name="description_hungary">Hungary (Hungarian: Magyarország IPA: [ˈmɒɟɒrorsaːɡ] ( listen)) is a country in Central Europe. It is a simple democratic parliamentary republic since 1989. It is a member of the North Atlantic Treaty Organization since 1999, the European Union since 2004 and part of the Schengen Area since 2007. The country has a population of 9.68 million and the official language is Hungarian. \nThe capital is Budapest.</string>
+    <string name="description_germany">Germany (German: Deutschlandⓘ), officially the Federal Republic of Germany (German: Bundesrepublik Deutschlandⓘ), is a federal parliamentary republic in Central and Western Europe. It consists of 16 constituent states, occupies an area of ​​356,051 km² and has a mostly moderate seasonal climate.</string>
+    <string name="description_spain">Spain (Spanish España), officially the Kingdom of Spain (Spanish Reino de España), is a southern European country, located in the southwest of the continent on the Iberian Peninsula and several neighboring archipelagos and enclaves. It is bordered by Portugal in the west and France and Andorra in the northeast. It opens to the Mediterranean Sea in the south and east and the Atlantic Ocean in the north and northwest, the European part of Gibraltar borders Spain. The capital is Madrid.</string>
+    <string name="description_italy">Italy (Ital. Italia [iˈtaːlja]; officially the Italian or Italian Republic, Ital. Repubblica Italiana), a country in southern Europe. Italy includes the Apennine Peninsula and three large islands in the Mediterranean Sea: Sicily, Sardinia and Elba. Its only land border is in the north, in the Alps, where it borders France, Switzerland, Austria and Slovenia. The independent states of San Marino and the Vatican are located within the territory of Italy.</string>
+    <string name="description_australia">Australia (English: Australia), officially the Commonwealth of Australia (English: Commonwealth of Australia), is a country in the southern hemisphere that includes the mainland of the eponymous smallest continent in the world, the island of Tasmania, as well as numerous other islands in the Southern, Indian and Pacific Oceans. The area of ​​Australia is 7,741,220 km² and it is the 6th largest country in the world. It is surrounded by Indonesia, East Timor and Papua New Guinea to the north, the Solomon Islands, Vanuatu and the French overseas possession of New Caledonia to the north-east and New Zealand to the south-east.</string>
+</resources>
