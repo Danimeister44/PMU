@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
 
     private ListView listView;
 
-    private static final Map<String, double[]> cityCoordinates = new HashMap<>();
+    public static final Map<String, double[]> cityCoordinates = new HashMap<>();
     static {
         cityCoordinates.put("Subotica", new double[]{46.1, 19.6667});
         cityCoordinates.put("Novi Sad", new double[]{45.2517, 19.8369});

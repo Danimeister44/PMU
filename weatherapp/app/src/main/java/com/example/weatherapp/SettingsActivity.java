@@ -1,23 +1,32 @@
 package com.example.weatherapp;
 
+import static com.example.weatherapp.MainActivity.cityCoordinates;
+
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.RadioGroup;
 import android.widget.Spinner;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 import com.example.weatherapp.R;
+
+import java.util.HashMap;
+import java.util.Map;
 
 public class SettingsActivity extends AppCompatActivity {
     Spinner spinnerCity;
@@ -26,6 +35,8 @@ public class SettingsActivity extends AppCompatActivity {
     Button buttonSave;
 
     String[] cities = {"Subotica", "Novi Sad", "Beograd", "San Francisko", "Sidnej"};
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +48,20 @@ public class SettingsActivity extends AppCompatActivity {
         radioGroupUnits = findViewById(R.id.radioGroupUnits);
         checkBoxRemember = findViewById(R.id.checkBoxRemember);
         buttonSave = findViewById(R.id.buttonSave);
+
+        // Assigning ID of the toolbar to a variable
+        Toolbar toolbar = findViewById(R.id.toolbar);
+
+        // Using toolbar as ActionBar
+        setSupportActionBar(toolbar);
+
+        // Display application icon in the toolbar
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().setDisplayShowHomeEnabled(true);
+            getSupportActionBar().setLogo(R.drawable.weather_clear_symbolic);
+            getSupportActionBar().setDisplayUseLogoEnabled(true);
+        }
+
 
         // Podesi spinner
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this,
@@ -61,9 +86,16 @@ public class SettingsActivity extends AppCompatActivity {
                     units = "imperial";
                 }
 
-                PreferencesManager.savePreferences(SettingsActivity.this, selectedCity, days, units);
+                boolean remember = checkBoxRemember.isChecked();
 
-
+                if (remember) {
+                    SharedPreferences prefs = getSharedPreferences("MyPrefs", Context.MODE_PRIVATE);
+                    SharedPreferences.Editor editor = prefs.edit();
+                    editor.putString("city", selectedCity);
+                    editor.putInt("days", days);
+                    editor.putString("units", units);
+                    editor.apply();
+                }
 
                 Intent resultIntent = new Intent();
                 resultIntent.putExtra("city", selectedCity);
@@ -73,5 +105,43 @@ public class SettingsActivity extends AppCompatActivity {
                 finish();
             }
         });
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu_main, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(android.view.MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.menu_refresh:
+                //azuriraj podatke
+                return true;
+            case R.id.menu_pollution:
+                String city = PreferencesManager.getCity(this);
+                double[] coords = cityCoordinates.get(city);
+
+                if (coords != null) {
+                    double lat = coords[0];
+                    double lon = coords[1];
+
+                    Intent pollutionIntent = new Intent(this, AirPollutionActivity.class);
+                    pollutionIntent.putExtra("lat", lat);
+                    pollutionIntent.putExtra("lon", lon);
+                    startActivity(pollutionIntent);
+                } else {
+                    Toast.makeText(this, "Coordinates not found for selected city", Toast.LENGTH_SHORT).show();
+                }
+                return true;
+            case R.id.menu_settings:
+                Intent intent = new Intent(this, SettingsActivity.class);
+                startActivity(intent);
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
     }
 }

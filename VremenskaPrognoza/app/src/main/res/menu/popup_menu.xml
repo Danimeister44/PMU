@@ -5,22 +5,21 @@
         android:title="Settings"
 
         app:showAsAction="never" />
-
     <item
         android:id="@+id/menu_refresh"
         android:title="Refresh"
 
         app:showAsAction="ifRoom" />
-
-
     <item
         android:id="@+id/menu_pollution"
         android:title="Pollution"
         app:showAsAction="ifRoom"/>
-
     <item
-        android:id="@+id/menu_about"
-        android:title="About"
-
+        android:id="@+id/menu_history"
+        android:title="History"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menu_favourite"
+        android:title="Favourite"
         app:showAsAction="never" />
 </menu>

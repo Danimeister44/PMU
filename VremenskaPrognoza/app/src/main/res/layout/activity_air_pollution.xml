@@ -6,21 +6,36 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".AirPollutionActivity">
+    <!-- ToolBar widget -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0F9D58"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Weather Forcast"
+        app:titleTextColor="#ffff" />
+
     <TextView
         android:id="@+id/textViewIndex"
         android:layout_width="124dp"
         android:layout_height="60dp"
-        android:layout_marginStart="132dp"
-        android:layout_marginTop="84dp"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="116dp"
         android:text="Ispisuje broj."
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:id="@+id/textView2Opis"
         android:layout_width="125dp"
         android:layout_height="64dp"
-        android:layout_marginEnd="152dp"
-        android:layout_marginBottom="484dp"
+        android:layout_marginEnd="160dp"
+        android:layout_marginBottom="412dp"
         android:text="Opis."
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />

@@ -16,8 +16,12 @@
         android:title="Pollution"
         app:showAsAction="never" />
     <item
-        android:id="@+id/menu_about"
-        android:title="About"
+        android:id="@+id/menu_history"
+        android:title="History"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menu_favourite"
+        android:title="Favourite"
         app:showAsAction="never" />
 
 </menu>
